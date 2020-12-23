@@ -1,0 +1,102 @@
+
+@media only screen and (max-width: 768px)
+{
+  /* when it is E [768,1023] */
+    body {
+      background-color: lightcoral;
+      padding: 0;
+      margin: 0;
+    }
+
+    #app-view{
+      width: 100%;
+    }
+
+    #app-view:hover{
+      width: 100%;
+      
+    }
+  }
+
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) 
+{
+  /* when it is E [768,1023] */
+    body {
+      padding: 0;
+      margin: 0;
+      background-color: lightblue;
+    }
+
+    #app-view{
+      width: 90%
+    }
+
+    #app-view:hover{
+      width: 90%;
+      
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    /* when it is E [1024,inf) */
+      body {
+        padding: 0;
+        margin: 0;
+        background-color: yellow;
+        
+      }
+
+
+      #app-view{
+        width: 80%;
+      }
+
+      #app-view:hover{
+        width: 80%;
+       
+      }
+    }
+
+
+
+    .message{
+      text-align:left;
+      width: 100%;
+      background-color: lightgreen;
+
+    }
+
+    .my-message{
+      text-align:right;
+      width: 100%;
+      background-color:lightseagreen
+    }
+
+    #app-menu li{
+      background-color:lightseagreen;
+      color:burlywood;
+    }
+
+    #app-menu li:hover{
+      background-color:rgb(223, 223, 223);
+      color:rgb(95, 54, 1);
+    }
+
+    .room-list li{
+      background-color:lightseagreen;
+      color:burlywood;
+    }
+
+    .room-list li:hover{
+      background-color:rgb(255, 255, 255);
+      color:rgb(75, 42, 0);
+    }
+
+
+textarea { 
+  width: 100%; 
+  margin: 0; 
+  padding: 0; 
+  border-width: 0; 
+  }

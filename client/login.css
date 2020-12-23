@@ -1,0 +1,115 @@
+@keyframes filter-animation {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    
+    50% {
+      filter: hue-rotate(180deg);
+    }
+    
+    100% {
+      filter: hue-rotate(0deg);
+    }
+  }
+
+#main-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows:repeat(12, 1fr);
+    background:rgb(0, 0, 0);
+    background-image: url(assets/image-from-rawpixel-id-2346115-png.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    filter: hue-rotate(-110deg);
+    animation: filter-animation 25s infinite;
+    width: 100vw;
+    height: 100vh;
+    z-index:1;
+    position:absolute;
+
+}
+*{
+    color:white;
+}
+
+*{ padding:0; margin:0; }/* no page gap*/
+
+
+
+ #logo{
+    grid-column: 1/6;
+    grid-row:    1/6;
+    font-family: "Arial Rounded MT Bold";
+    font-size: 120px;
+    padding:25px;
+    
+ }
+
+ #login-box{
+    border: black;
+    border-radius: 25px;
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    padding-left: 50px;
+    padding-right: 50px;
+
+    grid-column: 8/12;
+    grid-row:    4/10;
+ }
+#login-box p{
+    font-size: 50px;
+    font-family: lato;
+    padding :50px 0px 50px 0px;
+}
+
+input {
+    backdrop-filter: blur(100px);
+    background-color: rgba(0, 0, 0, 0.664);
+    border-radius: 50px;
+    border-width: 0px;
+    width: 90%;
+}
+#sub {
+    background-color: black;
+    color: white;
+    width: 40%;
+    font-size: 20px;
+    font-family: lato;
+    padding :10px;
+    float: right;
+}
+
+#username{
+    font-size: 20px;
+    font-family: lato;
+    padding :10px;
+}
+#password{
+    font-size: 20px;
+    font-family: lato;
+    padding :10px;
+}
+
+
+
+
+ #logo_text{
+    color: white;
+    z-index:1;
+    position:absolute;
+ }
+
+ #tagline{
+     
+    grid-column: 1/7;
+    grid-row:    6/-1;
+    padding-left: 50px;
+ }
+
+ #tagline p{
+    color: white;
+   font-family: "lato";
+   font-size: 56px;
+ }
+
